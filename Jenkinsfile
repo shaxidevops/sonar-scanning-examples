@@ -7,7 +7,7 @@ pipeline {
                 script {
                     withDockerContainer(image: 'sonarsource/sonar-scanner-cli:latest') {
                         sh """
-                        ./gradlew sonar \
+                        ./gradlew \
                             -Dsonar.projectKey=Example \
                             -Dsonar.projectName-Example \
                             -Dsonar.sources=. \
