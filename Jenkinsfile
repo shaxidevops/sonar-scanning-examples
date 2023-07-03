@@ -9,7 +9,7 @@ pipeline {
                         sh """
                         ./gradlew \
                             -Dsonar.projectKey=Example \
-                            -Dsonar.projectName-Example \
+                            -Dsonar.projectName=Example \
                             -Dsonar.sources=. \
                             -Dsonar.host.url=http://192.168.50.188:9000 \
                             -Dsonar.login=admin \
